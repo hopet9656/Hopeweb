@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Hopeweb/static/css/main.80ea8a2c.css",
+    "main.js": "/Hopeweb/static/js/main.e75291c3.js",
+    "static/media/image4.GIF": "/Hopeweb/static/media/image4.bc01e736d5a8a236e7f7.GIF",
+    "static/media/image.GIF": "/Hopeweb/static/media/image.550ccd3131074ff60fe0.GIF",
+    "static/media/image2.png": "/Hopeweb/static/media/image2.49988459bbfba4acd194.png",
+    "static/media/image3.jpg": "/Hopeweb/static/media/image3.ce4970afaacd908423f4.jpg",
+    "static/media/image5.webp": "/Hopeweb/static/media/image5.6e7ab088330907b712e1.webp",
+    "index.html": "/Hopeweb/index.html",
+    "main.80ea8a2c.css.map": "/Hopeweb/static/css/main.80ea8a2c.css.map",
+    "main.e75291c3.js.map": "/Hopeweb/static/js/main.e75291c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80ea8a2c.css",
+    "static/js/main.e75291c3.js"
+  ]
+}
