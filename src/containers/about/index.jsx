@@ -31,7 +31,29 @@ const personalDetails = [
 
 const jobSummary ="Highly motivated and junior Python developer with a strong foundation in computerscience principles and practical experience. Proficient in Python programming and skilledin various libraries and frameworks. Successfully developed a number of user-friendlyapplications, including a RESTful API for a weight gain tracking app. Eager to contribute myknowledge and enthusiasm to a dynamic development team. Proactive problem-solver,with a track record of delivering impactful projects in Python development. Successfullytransioned from an experienced IT helpdesk into soffware development";      
 
-
+const projectDetails = [
+  {
+    title: "Python Projects Breakdown",
+    description:
+      "PROJECT1:Created a weight gain tracking app using Python and an external API to track users' progress. The app allows users to set weight gain goals, record daily progress, and visualize trends over time. Acquired strong proficiency in working with RESTful APIs to fetch and store user data securely.",
+    technologies: "Python",
+    //repositoryLink:
+      //"Link to the project's Github repository - https://hopet9656.github.io/weightTracker.github.io/",
+    duties:
+      "Designing the app architecture, integrating external API for data retrieval, implementing data visualization features, ensuring data privacy and security.",
+  },
+  //more projects
+  {
+    title: "Project 2",
+    description:
+      "Created a card form using Django, HTML, CSS, and JavaScript. The app allows users to submit credit card details online for purchasing items.",
+    technologies: "Python, Django, HTML, CSS, JavaScript",
+    repositoryLink:
+      "Link to the project's Github repository - [Link to your repository]",
+    duties:
+      "Designing the card form, implementing data submission functionality, ensuring secure data handling.",
+  },
+];
 const About = () => {
   return (
     <section id="about" className="about">
@@ -52,33 +74,47 @@ const About = () => {
               transform: "translatex(0px)",
             }}
           >
-            <h3>Front End Developer</h3>
+            <h3>Back End Developer</h3>
             <p>{jobSummary}</p>
+
+            {/* Python Projects Breakdown */}
+            <div className="project-breakdown">
+            <h2 style={{ fontSize: '28px', color: 'var(--yellow-theme-main-color)' }}>
+                Python Projects Breakdown
+              </h2>
+              
+              <p>{projectDetails[0].description}</p>
+              <p>Technologies Used: {projectDetails[0].technologies}</p>
+              <p>Duties: {projectDetails[0].duties}</p>
+            
+            </div>
+            {/* Project 2 */}
+            <div className="project-breakdown">
+              <h2 style={{ fontSize: '28px', color: 'var(--yellow-theme-main-color)' }}>
+                Project 2
+              </h2>
+              <p>{projectDetails[1].description}</p>
+              <p>
+                <strong>Technologies Used:</strong> {projectDetails[1].technologies}
+              </p>
+              <p>
+                <strong>Duties:</strong> {projectDetails[1].duties}
+              </p>
+              
+              </div>
           </Animate>
 
-          <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-              transform: "translateX(500px)",
-            }}
-            end={{
-              transform: "translatex(0px)",
-            }}
-          >
-            <h3 className="personalInformationHeaderText">
-              Personal Information
-            </h3>
-            <ul>
-              {personalDetails.map((item, i) => (
-                <li key={i}>
-                  <span className="title">{item.label}</span>
-                  <span className="value">{item.value}</span>
-                </li>
-              ))}
-            </ul>
-          </Animate>
+          <h3 className="personalInformationHeaderText">
+            Personal Information
+          </h3>
+          <ul>
+            {personalDetails.map((item, i) => (
+              <li key={i}>
+                <span className="title">{item.label}</span>
+                <span className="value">{item.value}</span>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="about__content__servicesWrapper">
           <Animate
@@ -112,4 +148,9 @@ const About = () => {
     </section>
   );
 };
+
 export default About;
+
+
+
+

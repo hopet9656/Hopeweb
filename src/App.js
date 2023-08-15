@@ -4,9 +4,9 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Home from "./containers/home";
 import About from "./containers/about";
-import Resume from "./containers/resume";
+import Engagements from "./containers/engagements";
 import Skills from "./containers/skills";
-import Portfolio from "./containers/portfolio";
+import Projects from "./containers/projects";
 import Contact from "./containers/contact";
 import Navbar from "./components/navBar";
 import particles from "./utils.js/particles";
@@ -37,9 +37,9 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/engagements" element={<Engagements />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>

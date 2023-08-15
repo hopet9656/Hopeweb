@@ -138,6 +138,38 @@
                       bottom: -12%;
                       left: 40%;
                     }
+                    /* Add this CSS to your existing styles.scss file */
+.project-breakdown {
+  margin-top: 20px;
+  border-top: 1px dashed var(--yellow-theme-main-color);
+  padding-top: 20px;
+}
+
+.project-breakdown h4 {
+  font-size: 2rem;
+  color: var(--yellow-theme-main-color);
+  margin-bottom: 10px;
+}
+
+.project-breakdown p {
+  font-size: 1.8rem;
+  color: var(--yellow-theme-sub-text-color);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+
+.project-breakdown a {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--yellow-theme-main-color);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.project-breakdown a:hover {
+  color: var(--yellow-theme-sub-text-color);
+}
+
             
                     div:nth-child(4) {
                       position: absolute;
